@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Address_Book_System_ADO
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            AddressBookManagement addressBookManagement = new AddressBookManagement();
+
+            addressBookManagement.DataBaseConnection(); //UC1
+            addressBookManagement.GetAllContact(); //UC2
+            Console.ReadLine();
+
+        }
+    }
+}
